@@ -9,6 +9,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
+import Movie from './pages/Movie'
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                         <Route exact path="/" element={<Home/>}/>
                         <Route path="/about" element={<About/>}/>
                         <Route path="/contact" element={<Contact/>}/>
+                        <Route path="/movie/:id" element={<Movie/>}/>
                         <Route path="*" element={<NotFound/>}/>
                     </Routes>
                 </main>
